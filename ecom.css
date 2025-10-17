@@ -309,7 +309,24 @@ footer .links{
     height: auto;
 }
 
-@media screen and (max-width: 900px){
+#logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1000px;
+    height: auto;
+    justify-self: center;
+    padding: 5rem;
+}
+#logo img{
+    filter: grayscale(90%);
+    transition: all 0.3s ease;
+}
+
+#logo img:hover{
+    filter: grayscale(0%);
+}
+
+@media screen and (max-width: 1055px){
     #nav-links{
         max-height: 0;
         transition: max-height 0.3s ease-in, padding 0.3s ease-out;
@@ -361,6 +378,10 @@ footer .links{
     .dis-grid{
         grid-template-columns: 1fr 1fr;
     }
+    #logo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
     footer{
         width: auto;
         height: auto;
@@ -405,6 +426,10 @@ footer .links{
     }
     #people{
         margin: 1rem;
+    }
+    #logo{
+        grid-template-columns: 1fr;
+        padding: 1rem;
     }
     footer {
         grid-template-columns: 1fr;
