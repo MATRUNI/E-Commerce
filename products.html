@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | E-Commerce</title>
+    <link rel="stylesheet" href="ecom.css">
+     <script> const socket = new WebSocket("ws://" + location.host); socket.onmessage = (e) => { if (e.data === "reload") { location.reload(); } }; </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav-toggle" title="a">
+            <label for="nav-toggle" id="hamburger">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/menu.png" alt="">
+            </label>
+            <div id="nav-links">
+                <span><a href="index.html">Home</a></span>
+                <span>Products</span>
+                <span>About</span>
+                <span>Contact</span>
+                <span>Account</span>
+            </div>
+            <div><img src="https://capable-salamander-62e3f6.netlify.app/images/cart.png" alt=""></div>
+        </nav>
+    </div>
+    <div class="dis-grid">
+        <h2>All Products</h2>
+        <label for="drop-down"></label>
+        <select name="drop-down" id="drop-down" title="sad">
+            <option value="none">Default</option>
+            <option value="byPrice">SortByPrice</option>
+            <option value="byPopularity">SortByPopularity</option>
+            <option value="byRating">SortByRating</option>
+            <option value="bySale">SortBySale</option>
+        </select>
+    </div>
+    <div id="feature-grid" class="dis-grid">
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-1.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;500.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-2.jpg" alt="">
+            <p>HRX Sports Shoes</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;5000.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-3.jpg" alt="">
+            <p>Grey Track Pants</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;900.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-4.jpg" alt="">
+            <p>Blue Printed T-shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;450.00</p>
+        </div>
+    </div>
+    <div id="feature-grid" class="dis-grid">
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-5.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;500.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-6.jpg" alt="">
+            <p>HRX Sports Shoes</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;5000.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-7.jpg" alt="">
+            <p>Grey Track Pants</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;900.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-8.jpg" alt="">
+            <p>Blue Printed T-shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;450.00</p>
+        </div>
+    </div>
+ <div id="feature-grid" class="dis-grid">
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-9.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;500.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-10.jpg" alt="">
+            <p>HRX Sports Shoes</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;5000.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-11.jpg" alt="">
+            <p>Grey Track Pants</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;900.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-12.jpg" alt="">
+            <p>Blue Printed T-shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;450.00</p>
+        </div>
+    </div>
+ <div id="feature-grid" class="dis-grid">
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-4.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;500.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-1.jpg" alt="">
+            <p>HRX Sports Shoes</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;5000.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-10.jpg" alt="">
+            <p>Grey Track Pants</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;900.00</p>
+        </div>
+        <div><img src="https://capable-salamander-62e3f6.netlify.app/images/product-7.jpg" alt="">
+            <p>Blue Printed T-shirt</p>
+            <span class="stars">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/star.png" alt="">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/emptyStar.png" alt="">
+            </span>
+            <p id="price">&#8377;450.00</p>
+        </div>
+    </div>
+
+<div class="dis-grid pages">
+    <div  id="panel">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>&#8594;</div>
+    </div>
+</div>
+<div id="foot-wrapper">
+    <footer>
+        <div>
+            <div>
+                <h3>Download Our App</h3>
+                <p>Downlaod App for Android and iOS Mobile Phones</p>
+                <span>
+                    <img src="https://capable-salamander-62e3f6.netlify.app/images/play-store.png" alt="">
+                    <img src="https://capable-salamander-62e3f6.netlify.app/images/app-store.png" alt="">
+                </span>
+            </div>
+        </div>
+        <div class="links">
+            <h3>UseFul Links</h3>
+            <p>Coupons</p>
+            <p>Blog Post</p>
+            <p>Return Policy</p>
+            <p>Join Affiliates</p>
+        </div>
+        <div class="links">
+            <h3>Follows Us</h3>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>YouTube</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
