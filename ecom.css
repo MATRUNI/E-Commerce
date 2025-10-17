@@ -25,6 +25,11 @@ nav{
     transition: all 0.3s ease-in-out;
 }
 
+#nav-links span a{
+    text-decoration: none;
+    color: black;
+}
+
 #nav-toggle,#hamburger{
     display: none;
 }
@@ -382,6 +387,9 @@ footer .links{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3,1fr);
     }
+    #panel{
+        justify-self: center;
+    }
     footer{
         width: auto;
         height: auto;
@@ -434,4 +442,41 @@ footer .links{
     footer {
         grid-template-columns: 1fr;
     }
+}
+
+#drop-down{
+    border: 1px solid #FF523B;
+    max-width: 10rem;   
+    justify-self: end;
+}
+#drop-down:focus{
+    outline: none;
+}
+
+.pages{
+    grid-template-columns: 1fr;
+}
+
+#panel{
+    max-width: 1000;
+    height: auto;
+    width: auto;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+#panel div{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #FF523B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+}
+#panel div:hover{
+    color: white;
+    background-color: #FF523B;
 }
