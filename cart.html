@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <script> const socket = new WebSocket("ws://" + location.host); socket.onmessage = (e) => { if (e.data === "reload") { location.reload(); } }; </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart|E-Commerce</title>
+    <link rel="stylesheet" href="ecom.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav-toggle" title="a">
+            <label for="nav-toggle" id="hamburger">
+                <img src="https://capable-salamander-62e3f6.netlify.app/images/menu.png" alt="">
+            </label>
+            <div id="nav-links">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="products.html">Products</a></span>
+                <span>About</span>
+                <span>Contact</span>
+                <span>Account</span>
+            </div>
+            <div><a href="cart.html"><img src="https://capable-salamander-62e3f6.netlify.app/images/cart.png" alt=""></a></div>
+        </nav>
+    </div>
+    <div id="table-wrap">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>SubTotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product">
+                        <img src="https://capable-salamander-62e3f6.netlify.app/images/product-10.jpg" alt="">
+                    </div>
+                    <div class="product-detail">
+                        <p class="bold-name">Black HRX Shoes</p>
+                        <p class="bold-price">Price: &#8377;6000.00</p>
+                        <p class="bold-remove">Remove</p>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" title="as" min="1" value="1" class="quantity">
+                </td>
+                <td>&#8377;6000.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product">
+                        <img src="https://capable-salamander-62e3f6.netlify.app/images/product-1.jpg" alt="">
+                    </div>
+                    <div class="product-detail">
+                        <p class="bold-name">Black HRX Shoes</p>
+                        <p class="bold-price">Price: &#8377;5000.00</p>
+                        <p class="bold-remove">Remove</p>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" title="as" min="1" value="1" class="quantity">
+                </td>
+                <td>&#8377;5000.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product">
+                        <img src="https://capable-salamander-62e3f6.netlify.app/images/product-5.jpg" alt="">
+                    </div>
+                    <div class="product-detail">
+                        <p class="bold-name">Black HRX Shoes</p>
+                        <p class="bold-price">Price: &#8377;500.00</p>
+                        <p class="bold-remove">Remove</p>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" title="as" min="1" value="1" class="quantity">
+                </td>
+                <td>&#8377;500.00</td>
+            </tr>
+            <tr>
+                <td class="skip"></td>
+                <td>Sub Total</td>
+                <td>&#8377;11500.00</td>
+            </tr>
+            <tr>
+                <td class="skip"></td>
+                <td>Tax</td>
+                <td>&#8377;1195.00</td>
+            </tr>
+            <tr>
+                <td class="skip"></td>
+                <td>Total</td>
+                <td>&#8377;12695.00</td>
+            </tr>
+        </table>
+        <div id="btn"><button>Proceed to checkout &#8594;</button></div>
+    </div>
+    <div id="foot-wrapper">
+        <footer>
+            <div>
+                <div>
+                    <h3>Download Our App</h3>
+                    <p>Downlaod App for Android and iOS Mobile Phones</p>
+                    <span>
+                        <img src="https://capable-salamander-62e3f6.netlify.app/images/play-store.png" alt="">
+                        <img src="https://capable-salamander-62e3f6.netlify.app/images/app-store.png" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="links">
+                <h3>UseFul Links</h3>
+                <p>Coupons</p>
+                <p>Blog Post</p>
+                <p>Return Policy</p>
+                <p>Join Affiliates</p>
+            </div>
+            <div class="links">
+                <h3>Follows Us</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>YouTube</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
