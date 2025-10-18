@@ -223,7 +223,7 @@ nav div img{
 }
 footer{
     height: 11rem;
-    max-width: 2000px;
+    width: 90%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     color: #FF523B;
@@ -231,7 +231,7 @@ footer{
     gap: 1rem;
     justify-self: center;
     position: relative;
-    margin: 0 auto;
+    margin: 0;
     z-index: 10;
 }
 
@@ -256,7 +256,7 @@ footer div p{
     padding: 0.5rem;
 }
 footer div span{
-    margin: 2rem 2rem 2rem 0;
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 footer .links{
@@ -345,7 +345,6 @@ footer .links{
         color: white;
         width: auto;
         z-index: 10;
-        /* padding: 0 1rem; */
         margin: 1rem;
         gap: 1rem;
     }
@@ -353,6 +352,9 @@ footer .links{
         max-height: 10rem;
         display: flex;
         padding: 1rem;
+    }
+    #nav-links span a{
+        color: white;
     }
     #hamburger{
         display: inline;
@@ -390,6 +392,9 @@ footer .links{
     #panel{
         justify-self: center;
     }
+    td:nth-of-type(1) .bold-name{
+        display: none;
+     }
     footer{
         width: auto;
         height: auto;
@@ -439,6 +444,13 @@ footer .links{
         grid-template-columns: 1fr;
         padding: 1rem;
     }
+    td:nth-of-type(1){
+        display: flex;
+        flex-direction: column;
+    }
+     td:nth-of-type(1) .bold-name{
+        display: none;
+     }
     footer {
         grid-template-columns: 1fr;
     }
@@ -479,4 +491,103 @@ footer .links{
 #panel div:hover{
     color: white;
     background-color: #FF523B;
+}
+
+#table-wrap{
+    max-width: 1000px;
+    overflow-x: auto;
+    margin: 80px auto;
+    padding: 0 2rem;
+}
+
+table{
+    width: 100%;
+    justify-self: center;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 0.3rem;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #FF523B;
+}
+th:nth-child(1),
+td:nth-child(1){
+    width: 60%;
+    text-align: left;
+}
+th:nth-child(2),
+td:nth-child(2){
+    width: 20%;
+    text-align: left;
+}
+th:nth-child(3),
+td:nth-child(3){
+    width: 20%;
+    text-align: right;
+}
+td:nth-child(1){
+    display: flex;
+}
+.product img{
+    width: 5rem;
+    height: 6rem;
+    padding: 0.5rem;
+}
+.product-detail{
+    padding: 0.5rem;
+}
+.bold-name{
+    font-weight: 50;
+    font-size: large;
+    color: #555;
+}
+
+.bold-price{
+    font-size: small;
+    color: #555;
+}
+.bold-remove{
+    color: #FF523B;
+    font-size: smaller;
+}
+.quantity{
+    max-width: 2rem;
+    height: 1.5rem;
+}
+.skip{
+    display: none;
+}
+.hidden{
+    visibility: hidden;
+}
+tr:nth-child(5) td:nth-child(n+2){
+    border-top: 3px solid #FF523B;
+    padding-top: 1rem;
+}
+#btn{
+    width: 55%;
+    justify-self: center;
+    padding: 3rem;
+}
+#btn button{
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    background-color: #FF523B;
+    border-radius: 20px;
+    border: 2px solid #FF523B;
+    max-width: 15rem;
+    max-height: 5rem;
+    color: white;
+    font-size: medium;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+#btn button:hover{
+    background-color: #4e4e4e;
+    border-color: #4e4e4e;
 }
