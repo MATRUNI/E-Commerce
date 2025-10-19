@@ -85,7 +85,7 @@ nav div img{
     margin: 5rem;
 }
 .dis-grid div{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -557,6 +557,7 @@ td:nth-child(1){
 .quantity{
     max-width: 2rem;
     height: 1.5rem;
+    border: 1px solid #FF523B;
 }
 .skip{
     display: none;
