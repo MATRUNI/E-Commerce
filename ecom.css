@@ -113,7 +113,7 @@ nav div img{
     border-radius: 20px;
 }
 #feature-grid{
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: repeat(4,1fr);
     margin: 4rem 0 5rem 0;
 }
@@ -272,12 +272,17 @@ footer .links{
     gap: 1rem;
 }
 
+#people div{
+    width: 15rem;
+}
+
 .cards{
     display: flex;
     flex-direction: column;
     justify-items: center;
     box-shadow: 0 0 10px 1px #55555525;
     height: 100%;
+    width: 10rem;
     padding: 2rem;
     transition: all 0.3s ease;
 }
@@ -401,6 +406,11 @@ footer .links{
         text-align: center;
         gap: 2rem;
     }  
+    #exclusive #ex-img{
+        padding: 0%;
+        height: 20rem;
+        width: 50vw;
+    }
 } 
 
 @media screen and (max-width:600px) {
@@ -431,6 +441,10 @@ footer .links{
     }
     #exclusive #ex-img{
         grid-row: 1/2;
+    }
+    #exclusive #ex-img img{
+        width: 100vw;
+        height: 10rem;
     }
     #exclusive #ex-text{
         grid-column: auto;
